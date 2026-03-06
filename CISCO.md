@@ -1,5 +1,7 @@
 Telnet은 구식 잊어라
 대신 SSH 씀
+# 기본
+
 ![[Pasted image 20260306091644.png]]
 ```
 enable: 관리 모드
@@ -21,3 +23,14 @@ password 금지. secret 권장
 ![[Pasted image 20260306092243.png]]
 ![[Pasted image 20260306092414.png]]
 ![[Pasted image 20260306095039.png]]
+
+# SSH
+
+>[!warning]
+>telnet 금지!
+
+![[Pasted image 20260306102558.png]]
+```
+
+crypto key generate rsa: private key
+```
