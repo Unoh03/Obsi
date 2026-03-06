@@ -12,8 +12,10 @@ conf t: 설정 모드
 password 금지. secret 권장
 비번 입력할떄 원래 안보임 당황 ㄴㄴ
 
+'솔트' 라고하는 $과 $ 사이에 들어가는 문자가 있음.
 ```
+![[Pasted image 20260306094925.png]]
 
 ![[Pasted image 20260306092243.png]]
 ![[Pasted image 20260306092414.png]]
-
+![[Pasted image 20260306095039.png]]

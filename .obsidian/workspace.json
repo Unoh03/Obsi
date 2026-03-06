@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#에서",
+                "query": "",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -206,8 +206,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "444800edf6d2dcff",
+  "active": "c766fba43e656360",
   "lastOpenFiles": [
+    "Pasted image 20260306095039.png",
+    "Pasted image 20260306094925.png",
+    "Pasted image 20260306094922.png",
+    "Pasted image 20260306094854.png",
     "Pasted image 20260306092414.png",
     "Pasted image 20260306092243.png",
     "Pasted image 20260306092101.png",
