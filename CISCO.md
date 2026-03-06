@@ -40,18 +40,19 @@ crypto key generate rsa # private key 생성
 ```
 ![[Pasted image 20260306104451.png]]
 
-# [[실습 문제]]
+# [[실습 문제 1]]
 
 ![[Pasted image 20260306130934.png]]
 ```bash
 1. 못하면 바보
 2. en
    conf t
-   lin con 0
-   exec-time 5
-   user aaa sec 123
    ena sec 123
+   user aaa sec 123
+   lin con 0
    logi loc
+   logg syn
+   exec-time 5
    # 반대 라우터에도 동일하게
 3. conf t
    int f0/0
@@ -63,7 +64,8 @@ crypto key generate rsa # private key 생성
    no sh
    # 반대 라우터 동일(ip 빼고)
 4. #여기서 PC1에서 ping 2.2.2.1 하면 라우터1(1.1.1.2)에서 2.2.2.1을 몰라서 모른다고 응답 보냄(desti host unreach)
-#PC1 에서 ping 2.2.2.2 하면 리퀘 탐 아웃. 이유는 까먹음
+#PC1 에서 ping 12.12.12.2 하면 리퀘 탐 아웃. 이유는 까먹음
+# 아직 1번 네트워크끼리, 2번 네트워크끼리, 라우터끼리만 통신 됨
 5. # RSA(비대칭 키) 필요 상황
    conf t
    hostname '맘대로(라우터끼리 다르게)'
@@ -78,4 +80,23 @@ crypto key generate rsa # private key 생성
    exit
    ip ssh v 2
    
+   #PC1에서
+   ssh -l aaa 1.1.1.2
+   #pc2에서
+   ssh -l bbb 2.2.2.2
+```
+
+```bash
+#하나의 네트워크가 있는 것처럼 하며 테스트를 하고싶을 땐 루프백 사용
+conf t
+int loopback 0
+ip add 'ip 하고싶은거'
+```
+
+# [[실습 문제 2]]
+
+![[Pasted image 20260306152834.png]]
+
+```bash
+
 ```
