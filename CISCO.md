@@ -39,3 +39,7 @@ crypto key generate rsa # private key 생성
 '(config)#' ip ssh version 2 # 버젼 2 만 사용
 ```
 ![[Pasted image 20260306104451.png]]
+
+# [[실습 문제]]
+
+![[Pasted image 20260306130934.png]]
