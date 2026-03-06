@@ -98,5 +98,12 @@ ip add 'ip 하고싶은거'
 ![[Pasted image 20260306152834.png]]
 
 ```bash
-
+en
+conf t
+hostname ''
+no ip domain-lookup
+ena cisco
+username cisco sec cisco
+lin con 0
+logi loc
 ```
