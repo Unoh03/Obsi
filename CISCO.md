@@ -5,12 +5,11 @@ enable: 관리 모드
 conf t: 설정 모드
 ![[Pasted image 20260306091925.png]]
 >[!warning]
->#에서 end하면 렉 먹음!
-
+>"#"에서 end하면 렉 먹음!
 
 ![[Pasted image 20260306092101.png]]
 ```
-password 대신 secret 좋음
+password 금지. secret 권장
 비번 입력할떄 원래 안보임 당황 ㄴㄴ
 
 ```
