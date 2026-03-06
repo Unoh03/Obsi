@@ -11,7 +11,7 @@ conf t: 전역 설정 모드
 >[!warning]
 >"#"에서 end하면 렉 먹음!
 
-![[Pasted image 20260306092101.png]]
+![[강의 자료/CH03_Device configuration v1.3.pdf#page=17]]
 ```bash
 password 금지. secret 권장
 비번 입력할떄 원래 안보임 당황 ㄴㄴ
