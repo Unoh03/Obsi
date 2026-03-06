@@ -1,8 +1,10 @@
 Telnet은 구식 잊어라
 대신 SSH 씀
 ![[Pasted image 20260306091644.png]]
+```
 enable: 관리 모드
-conf t: 설정 모드
+conf t: 전역 설정 모드
+```
 ![[Pasted image 20260306091925.png]]
 >[!warning]
 >"#"에서 end하면 렉 먹음!
