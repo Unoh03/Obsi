@@ -46,12 +46,12 @@ crypto key generate rsa # private key 생성
 ```bash
 1. 못하면 바보
 2. en
-   en sec 123
    conf t
    lin con 0
    exec-time 5
-   pass 123
-   logi
+   user aaa sec 123
+   ena sec 123
+   logi loc
    # 반대 라우터에도 동일하게
 3. conf t
    int f0/0
@@ -62,5 +62,20 @@ crypto key generate rsa # private key 생성
    ip add 12.12.12.1 255.255.255.0
    no sh
    # 반대 라우터 동일(ip 빼고)
-5. 
+4. #여기서 PC1에서 ping 2.2.2.1 하면 라우터1(1.1.1.2)에서 2.2.2.1을 몰라서 모른다고 응답 보냄(desti host unreach)
+#PC1 에서 ping 2.2.2.2 하면 리퀘 탐 아웃. 이유는 까먹음
+5. # RSA(비대칭 키) 필요 상황
+   conf t
+   hostname '맘대로(라우터끼리 다르게)'
+   ip domain-name '맘대로(둘이 같게)'
+   cry k ge rsa
+   2048 # 키 용량 설정. 보통 2048 많이 씀
+   lin vty 0 4 
+   logi loc
+   transport input ssh
+   logg syn
+   exec-t 5
+   exit
+   ip ssh v 2
+   
 ```
