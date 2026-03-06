@@ -22,6 +22,18 @@
             }
           },
           {
+            "id": "a5ce0cc42efacefb",
+            "type": "leaf",
+            "state": {
+              "type": "image",
+              "state": {
+                "file": "무제/Pasted image 20260306095039.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260306095039"
+            }
+          },
+          {
             "id": "dc93a722ef839f92",
             "type": "leaf",
             "state": {
@@ -31,7 +43,8 @@
               "title": "그래프 뷰"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -84,8 +97,7 @@
               "title": "북마크"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -206,20 +218,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c766fba43e656360",
+  "active": "01cbdc931a4355bb",
   "lastOpenFiles": [
-    "Pasted image 20260306095039.png",
-    "Pasted image 20260306094925.png",
-    "Pasted image 20260306094922.png",
-    "Pasted image 20260306094854.png",
-    "Pasted image 20260306092414.png",
-    "Pasted image 20260306092243.png",
-    "Pasted image 20260306092101.png",
-    "Pasted image 20260306091925.png",
-    "Pasted image 20260306091644.png",
+    "CISCO.md",
+    "무제",
+    "무제/Pasted image 20260306095039.png",
+    "무제/Pasted image 20260306094925.png",
+    "무제/Pasted image 20260306094922.png",
+    "무제/Pasted image 20260306094854.png",
+    "무제/Pasted image 20260306092414.png",
+    "무제/Pasted image 20260306092243.png",
+    "무제/Pasted image 20260306092101.png",
+    "무제/Pasted image 20260306091925.png",
+    "무제/Pasted image 20260306091644.png",
     "네트워크.md",
     "test.md",
-    "CISCO.md",
     "그그 뭐더라.md",
     "환영합니다!.md"
   ]
