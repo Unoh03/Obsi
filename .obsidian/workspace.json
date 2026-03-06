@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c6dd6adcd6ae2729",
+            "id": "c766fba43e656360",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,6 +19,16 @@
               },
               "icon": "lucide-file",
               "title": "CISCO"
+            }
+          },
+          {
+            "id": "dc93a722ef839f92",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "그래프 뷰"
             }
           }
         ]
@@ -40,7 +50,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "byModifiedTime",
+                "sortOrder": "alphabetical",
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
@@ -171,8 +181,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "lucide-ghost",
-              "title": "git-view"
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -185,45 +195,40 @@
   },
   "left-ribbon": {
     "hiddenItems": {
+      "obsidian-git:Open Git source control": false,
       "switcher:빠른 전환기 열기": false,
       "graph:그래프 뷰 열기": false,
       "canvas:새 캔버스 만들기": false,
       "daily-notes:오늘의 일일 노트 열기": false,
       "templates:템플릿 삽입": false,
       "command-palette:명령어 팔레트 열기": false,
-      "bases:새 베이스 생성하기": false,
-      "obsidian-git:Open Git source control": false,
-      "table-editor-obsidian:Advanced Tables Toolbar": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "bases:새 베이스 생성하기": false
     }
   },
-  "active": "c6dd6adcd6ae2729",
+  "active": "c766fba43e656360",
   "lastOpenFiles": [
+    "팁.md",
+    "무제/Pasted image 20260306152834.png",
     "무제/Pasted image 20260306130934.png",
     "무제/Pasted image 20260306104451.png",
-    "무제/Pasted image 20260306152834.png",
-    "CISCO.md",
-    "무제/Pasted image 20260306152732.png",
-    "SSH.md",
-    "무제/Pasted image 20260306091644.png",
-    "무제/CH03_Device configuration v1.3.pdf",
-    "무제/CH03_Device configuration v1.3 1.pdf",
-    "강의 자료/CH03_Device configuration v1.3.pdf",
-    "Excalidraw/Drawing 2026-03-06 10.26.31.excalidraw.md",
-    "Excalidraw",
     "무제/Pasted image 20260306102558.png",
     "무제/Pasted image 20260306102553.png",
-    "ㅅㄷㄴㅅ.md",
-    "강의 자료/CH02_TCP-IP v1.2.pdf",
-    "강의 자료",
-    "팁.md",
     "무제/Pasted image 20260306095039.png",
-    "무제",
     "무제/Pasted image 20260306094925.png",
     "무제/Pasted image 20260306094922.png",
+    "무제/Pasted image 20260306094854.png",
+    "무제/Pasted image 20260306092414.png",
+    "무제",
+    "강의 자료/CH03_Device configuration v1.3.pdf",
+    "강의 자료/CH02_TCP-IP v1.2.pdf",
+    "강의 자료",
+    "SSH.md",
+    "Excalidraw/Drawing 2026-03-06 10.26.31.excalidraw.md",
+    "Excalidraw",
+    "그그 뭐더라.md",
+    "CISCO.md",
     "네트워크.md",
     "test.md",
-    "그그 뭐더라.md",
     "환영합니다!.md"
   ]
 }
