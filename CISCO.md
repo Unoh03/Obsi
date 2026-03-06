@@ -36,6 +36,6 @@ crypto key generate rsa: private key
 SSH 1.99 : 버젼 1이나 2 사용. 1은 보안 취약점 있음
 line vty의 가짓수는 보통 0~4로 5개
 transport intput ssh: SSH만 허용
-ip 
+config)# ip ssh version 2: 버젼 2 만 사용
 ```
 ![[Pasted image 20260306104451.png]]
