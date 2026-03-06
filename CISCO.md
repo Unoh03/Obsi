@@ -98,12 +98,24 @@ ip add 'ip 하고싶은거'
 ![[Pasted image 20260306152834.png]]
 
 ```bash
+# 라우터 기본 설정
 en
 conf t
-hostname ''
 no ip domain-lookup
-ena cisco
+ena sec cisco
 username cisco sec cisco
 lin con 0
 logi loc
+exec-t 10 30
+logg syn
+username cisco sec cisco
+lin vty 0 4
+logi loc
+exec-t 5
+logg syn
+exit
+hostname 
+
+#인터페이스 설정
+# 사용 가능 IP는 192.168.1.225, 192.168.1.226
 ```
