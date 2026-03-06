@@ -34,5 +34,8 @@ password 금지. secret 권장
 crypto key generate rsa: private key
 [512]: size==복잡도. 가능 범위는 <중략>에 적혀있음
 SSH 1.99 : 버젼 1이나 2 사용. 1은 보안 취약점 있음
-
+line vty의 가짓수는 보통 0~4로 5개
+transport intput ssh: SSH만 허용
+ip 
 ```
+![[Pasted image 20260306104451.png]]
