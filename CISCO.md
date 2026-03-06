@@ -43,3 +43,24 @@ crypto key generate rsa # private key 생성
 # [[실습 문제]]
 
 ![[Pasted image 20260306130934.png]]
+```bash
+1. 못하면 바보
+2. en
+   en sec 123
+   conf t
+   lin con 0
+   exec-time 5
+   pass 123
+   logi
+   # 반대 라우터에도 동일하게
+3. conf t
+   int f0/0
+   ip add 1.1.1.2 255.255.255.0
+   no sh
+   
+   int f0/1
+   ip add 12.12.12.1 255.255.255.0
+   no sh
+   # 반대 라우터 동일(ip 빼고)
+5. 
+```
