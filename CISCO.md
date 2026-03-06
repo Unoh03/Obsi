@@ -31,6 +31,8 @@ password 금지. secret 권장
 
 ![[Pasted image 20260306102558.png]]
 ```
-
 crypto key generate rsa: private key
+[512]: size==복잡도. 가능 범위는 <중략>에 적혀있음
+SSH 1.99 : 버젼 1이나 2 사용. 1은 보안 취약점 있음
+
 ```
