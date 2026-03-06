@@ -63,7 +63,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#에서",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -84,7 +84,8 @@
               "title": "북마크"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
@@ -205,7 +206,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c766fba43e656360",
+  "active": "444800edf6d2dcff",
   "lastOpenFiles": [
     "Pasted image 20260306092414.png",
     "Pasted image 20260306092243.png",
