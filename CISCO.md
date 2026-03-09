@@ -1,6 +1,6 @@
 Telnet은 구식 잊어라
 대신 SSH 씀
-# 기본
+# 명령어
 ![[Pasted image 20260306091644.png]]
 
 ```bash
@@ -42,7 +42,7 @@ crypto key generate rsa # private key 생성
 ```
 ![[Pasted image 20260306104451.png]]
 
-# [[실습 문제 1]]
+## [[실습 문제 1]]
 
 ![[Pasted image 20260306130934.png]]
 ```bash
@@ -95,7 +95,7 @@ int loopback 0
 ip add 'ip 하고싶은거'
 ```
 
-# [[실습 문제 2]]
+## [[실습 문제 2]]
 
 ![[Pasted image 20260306152834.png]]
 
@@ -129,4 +129,12 @@ ip ad ㅑㅔ
 no sh
 
 sh ip route #경로 보여주는 명령어
+```
+# 라우팅
+![[Pasted image 20260309105518.png]]
+```bash
+다이나믹 라우팅은 복잡할 떄, 스테틱은 단순할 때(특히 경로가 1자일 떄).
+
+스테틱 라우팅은 관리자가 잘 알고 있어야 트래픽이 느려지는 증 장애가 발생하지 않음.
+
 ```

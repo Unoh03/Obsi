@@ -22,6 +22,20 @@
             }
           },
           {
+            "id": "a3731780f5f60429",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "CISCO.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "CISCO"
+            }
+          },
+          {
             "id": "8b0065239afe9450",
             "type": "leaf",
             "state": {
@@ -33,7 +47,8 @@
               "title": "Pasted image 20260306091925"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -90,8 +105,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "701453cb909506ae",
@@ -220,11 +234,14 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "c766fba43e656360",
+  "active": "a3731780f5f60429",
   "lastOpenFiles": [
+    "라우팅.md",
+    "CISCO.md",
+    "명령어.md",
+    "무제/Pasted image 20260309105518.png",
     "무제/Pasted image 20260306091925.png",
     "무제/Pasted image 20260306091644.png",
-    "CISCO.md",
     "팁.md",
     "무제.base",
     "무제/Pasted image 20260306130934.png",
@@ -234,7 +251,6 @@
     "무제/Pasted image 20260306104451.png",
     "무제/Pasted image 20260306102558.png",
     "무제/Pasted image 20260306102553.png",
-    "무제/Pasted image 20260306095039.png",
     "무제",
     "강의 자료/CH03_Device configuration v1.3.pdf",
     "강의 자료/CH02_TCP-IP v1.2.pdf",
