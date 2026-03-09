@@ -1,14 +1,14 @@
 Telnet은 구식 잊어라
 대신 SSH 씀
 # 기본
-![[강의 자료/CH03_Device configuration v1.3.pdf#page=15]]
+![[Pasted image 20260306091644.png]]
 
 ```bash
 enable: 관리 모드
 conf t: 전역 설정 모드
 앞에 do 를 넣으면 모드 상관 없이 명령어 입력 가능
 ```
-![[강의 자료/CH03_Device configuration v1.3.pdf#page=16]]
+![[Pasted image 20260306091925.png]]
 >[!warning]
 >"#"에서 end하면 렉 먹음!
 
