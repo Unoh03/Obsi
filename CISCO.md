@@ -148,4 +148,14 @@ sh ip route #경로 보여주는 명령어
 ![[Pasted image 20260309114050.png]]
 ```bash
 | (파이프)는 or의 뜻을 가짐
+
+```
+![[Pasted image 20260309114401.png]]
+```bash
+3-2번은 현재는 해당되지 않음. 발전이 됨.
+```
+![[Pasted image 20260309114728.png]]
+```bash
+인터페이스 까지만 입력해도 잘 됨
+Admin Distance: 우선순위.
 ```
