@@ -56,16 +56,17 @@ crypto key generate rsa # private key 생성
    # 반대 라우터에도 동일하게
 2. conf t
    int f0/0
-   ip add 1.1.1.2 255.255.255.0
+   ip ad 1.1.1.2 255.255.255.0
    no sh
    
    int f0/1
-   ip add 12.12.12.1 255.255.255.0
+   ip ad 12.12.12.1 255.255.255.0
    no sh
    # 반대 라우터 동일(ip 빼고)
 3. #여기서 PC1에서 ping 2.2.2.1 하면 라우터1(1.1.1.2)에서 2.2.2.1을 몰라서 모른다고 응답 보냄(desti host unreach)
 #PC1 에서 ping 12.12.12.2 하면 리퀘 탐 아웃. 이유는 까먹음
 # 아직 1번 네트워크끼리, 2번 네트워크끼리, 라우터끼리만 통신 됨
+#라우터에서 핑 칠때, 앞에 do  넣으면 모드 상관 없이 핑 가능
 5. # RSA(비대칭 키) 필요 상황
    conf t
    hostname '맘대로(라우터끼리 다르게)'
@@ -99,8 +100,8 @@ ip add 'ip 하고싶은거'
 
 ```bash
 # 라우터 기본 설정
-en
-conf t
+en #관리모드
+conf t #전역 설정모드
 no ip domain-lookup #오타,잘못 입력했을때 도메인 서버에 번역,검색하느라 시간 낭비 안하게 함.
 ena sec cisco #설정모드(맨 처음 enable) 들어갈 때 비번 설정
 username cisco sec cisco #계정 생성
@@ -123,6 +124,6 @@ hostname
 en
 conf t
 int 포트
-ip add ㅑㅔ
+ip ad ㅑㅔ
 no sh
 ```
