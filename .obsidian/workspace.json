@@ -8,7 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "c766fba43e656360",
+            "id": "a3731780f5f60429",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -22,13 +22,15 @@
             }
           },
           {
-            "id": "dc93a722ef839f92",
+            "id": "8b0065239afe9450",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "image",
+              "state": {
+                "file": "무제/Pasted image 20260306091925.png"
+              },
+              "icon": "lucide-image",
+              "title": "Pasted image 20260306091925"
             }
           }
         ]
@@ -50,8 +52,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
+                "sortOrder": "byModifiedTime",
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "파일 탐색기"
@@ -88,7 +90,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "701453cb909506ae",
@@ -184,9 +187,19 @@
               "icon": "git-pull-request",
               "title": "Source Control"
             }
+          },
+          {
+            "id": "2c0740de5c70eb15",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
           }
         ],
-        "currentTab": 5
+        "currentTab": 6
       }
     ],
     "direction": "horizontal",
@@ -207,19 +220,27 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "c766fba43e656360",
+  "active": "a3731780f5f60429",
   "lastOpenFiles": [
+    "무제 2",
+    "무제 1",
+    "라우팅.md",
+    "네트워크.md",
+    "무제.canvas",
+    "CISCO.md",
+    "무제/Pasted image 20260309114728.png",
+    "무제/Pasted image 20260309114401.png",
+    "무제/Pasted image 20260309114050.png",
+    "무제/Pasted image 20260309113752.png",
+    "무제/Pasted image 20260309113404.png",
+    "무제/Pasted image 20260309113402.png",
+    "무제/Pasted image 20260309112812.png",
+    "명령어.md",
+    "무제/Pasted image 20260309105518.png",
+    "무제/Pasted image 20260306091925.png",
+    "무제/Pasted image 20260306091644.png",
     "팁.md",
-    "무제/Pasted image 20260306152834.png",
-    "무제/Pasted image 20260306130934.png",
-    "무제/Pasted image 20260306104451.png",
-    "무제/Pasted image 20260306102558.png",
-    "무제/Pasted image 20260306102553.png",
-    "무제/Pasted image 20260306095039.png",
-    "무제/Pasted image 20260306094925.png",
-    "무제/Pasted image 20260306094922.png",
-    "무제/Pasted image 20260306094854.png",
-    "무제/Pasted image 20260306092414.png",
+    "무제.base",
     "무제",
     "강의 자료/CH03_Device configuration v1.3.pdf",
     "강의 자료/CH02_TCP-IP v1.2.pdf",
@@ -228,8 +249,6 @@
     "Excalidraw/Drawing 2026-03-06 10.26.31.excalidraw.md",
     "Excalidraw",
     "그그 뭐더라.md",
-    "CISCO.md",
-    "네트워크.md",
     "test.md",
     "환영합니다!.md"
   ]

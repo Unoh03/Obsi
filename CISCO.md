@@ -1,13 +1,17 @@
 Telnet은 구식 잊어라
 대신 SSH 씀
-# 기본
-![[강의 자료/CH03_Device configuration v1.3.pdf#page=15]]
+# 명령어
+![[Pasted image 20260306091644.png]]
 
 ```bash
 enable: 관리 모드
 conf t: 전역 설정 모드
 ```
-![[강의 자료/CH03_Device configuration v1.3.pdf#page=16]]
+>[!tip]
+>앞에 **do** 를 넣으면 모드 상관 없이 명령어 입력 가능.
+단, 안쪽 모드에서 바깥 모드로만 적용 됨. 탭과 ? 못 씀
+
+![[Pasted image 20260306091925.png]]
 >[!warning]
 >"#"에서 end하면 렉 먹음!
 
@@ -40,30 +44,30 @@ crypto key generate rsa # private key 생성
 ```
 ![[Pasted image 20260306104451.png]]
 
-# [[실습 문제 1]]
+## [[실습 문제 1]]
 
 ![[Pasted image 20260306130934.png]]
 ```bash
 1. 못하면 바보
-2. en
-   conf t
-   ena sec 123
-   user aaa sec 123
-   lin con 0
-   logi loc
-   logg syn
-   exec-time 5
+   en #관리모드
+   conf t #전역 설정모드
+   ena sec 123 #관리모드 비번 설정
+   user aaa sec 123 #계정 생성
+   lin con 0 #콘솔 접속, line 모드 진입
+   logi loc #지금 접속한 계정으로 설정
+   logg syn #로그 메시지 동기화
+   exec-time 5 #접속 유지시간 5분 설정
    # 반대 라우터에도 동일하게
-3. conf t
+2. conf t
    int f0/0
-   ip add 1.1.1.2 255.255.255.0
+   ip ad 1.1.1.2 255.255.255.0
    no sh
    
    int f0/1
-   ip add 12.12.12.1 255.255.255.0
+   ip ad 12.12.12.1 255.255.255.0
    no sh
    # 반대 라우터 동일(ip 빼고)
-4. #여기서 PC1에서 ping 2.2.2.1 하면 라우터1(1.1.1.2)에서 2.2.2.1을 몰라서 모른다고 응답 보냄(desti host unreach)
+3. #여기서 PC1에서 ping 2.2.2.1 하면 라우터1(1.1.1.2)에서 2.2.2.1을 몰라서 모른다고 응답 보냄(desti host unreach)
 #PC1 에서 ping 12.12.12.2 하면 리퀘 탐 아웃. 이유는 까먹음
 # 아직 1번 네트워크끼리, 2번 네트워크끼리, 라우터끼리만 통신 됨
 5. # RSA(비대칭 키) 필요 상황
@@ -93,32 +97,68 @@ int loopback 0
 ip add 'ip 하고싶은거'
 ```
 
-# [[실습 문제 2]]
+## [[실습 문제 2]]
 
 ![[Pasted image 20260306152834.png]]
 
 ```bash
 # 라우터 기본 설정
-en
-conf t
-no ip domain-lookup
-ena sec cisco
-username cisco sec cisco
-lin con 0
-logi loc
-exec-t 10 30
-logg syn
+en #관리모드
+conf t #전역 설정모드
+no ip domain-lookup #오타,잘못 입력했을때 도메인 서버에 번역,검색하느라 시간 낭비 안하게 함.
+ena sec cisco #설정모드(맨 처음 enable) 들어갈 때 비번 설정
+username cisco sec cisco #계정 생성
+lin con 0 #콘솔과 연결
+logi loc #지금 로그인 한 계정으로 앞으로 로그인 하겠다
+exec-t 10 30 #10분 30초 타임아웃
+logg syn #로그 동기화
 username cisco sec cisco
 lin vty 0 4
 logi loc
 exec-t 5
 logg syn
-exit
+exit #호스트네임 설정 위해 나감
 hostname 
 
 #인터페이스 설정
-# 사용 가능 IP는 192.168.1.225, 192.168.1.226  섭넷 마스크 .252
+# 192.168.1.X/30의 사용 가능 IP는 192.168.1.X+1과 192.168.1.X+2로 2개
+# X는 메인, X+3은 브로드캐스트. 하여 총 4개=2의 (32-30)제곱
+# ip를 이진법으로 변환했을 떄, 메인IP의 Host-id가 0으로만 되어있어야한다.
 en
 conf t
-int 
+int 포트
+ip ad ㅑㅔ
+no sh
+
+sh ip route #경로 보여주는 명령어
+```
+# 라우팅
+![[Pasted image 20260309112812.png]]
+```bash
+
+```
+![[Pasted image 20260309105518.png]]
+```bash
+다이나믹 라우팅은 복잡할 떄, 스테틱은 단순할 때(특히 경로가 1자일 떄). 둘 중 하나 골라 사용 함.
+데이터를 보내려면 상대 인터페이스의 정보를 알아야 함
+```
+>[!warning]
+>스테틱 라우팅은 관리자가 잘 알고 있어야 트래픽이 느려지는 증 장애가 발생하지 않음.
+
+![[Pasted image 20260309113404.png]]
+![[Pasted image 20260309113752.png]]
+![[Pasted image 20260309114050.png]]
+```bash
+| (파이프)는 or의 뜻을 가짐
+
+```
+![[Pasted image 20260309114401.png]]
+```bash
+3-2번은 현재는 해당되지 않음. 발전이 됨.
+```
+![[Pasted image 20260309114728.png]]
+```bash
+인터페이스 까지만 입력해도 잘 됨
+Admin Distance: 우선순위.
+
 ```
