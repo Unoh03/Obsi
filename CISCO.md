@@ -6,6 +6,7 @@ Telnet은 구식 잊어라
 ```bash
 enable: 관리 모드
 conf t: 전역 설정 모드
+앞에 do 를 넣으면 모드 상관 없이 명령어 입력 가능
 ```
 ![[강의 자료/CH03_Device configuration v1.3.pdf#page=16]]
 >[!warning]
@@ -66,7 +67,6 @@ crypto key generate rsa # private key 생성
 3. #여기서 PC1에서 ping 2.2.2.1 하면 라우터1(1.1.1.2)에서 2.2.2.1을 몰라서 모른다고 응답 보냄(desti host unreach)
 #PC1 에서 ping 12.12.12.2 하면 리퀘 탐 아웃. 이유는 까먹음
 # 아직 1번 네트워크끼리, 2번 네트워크끼리, 라우터끼리만 통신 됨
-#라우터에서 핑 칠때, 앞에 do  넣으면 모드 상관 없이 핑 가능
 5. # RSA(비대칭 키) 필요 상황
    conf t
    hostname '맘대로(라우터끼리 다르게)'
@@ -126,4 +126,6 @@ conf t
 int 포트
 ip ad ㅑㅔ
 no sh
+
+sh ip route #경로 보여주는 명령어
 ```
