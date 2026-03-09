@@ -52,8 +52,8 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
+                "sortOrder": "byModifiedTime",
+                "autoReveal": true
               },
               "icon": "lucide-folder-closed",
               "title": "파일 탐색기"
@@ -222,6 +222,12 @@
   },
   "active": "a3731780f5f60429",
   "lastOpenFiles": [
+    "무제 2",
+    "무제 1",
+    "라우팅.md",
+    "네트워크.md",
+    "무제.canvas",
+    "CISCO.md",
     "무제/Pasted image 20260309114728.png",
     "무제/Pasted image 20260309114401.png",
     "무제/Pasted image 20260309114050.png",
@@ -229,15 +235,12 @@
     "무제/Pasted image 20260309113404.png",
     "무제/Pasted image 20260309113402.png",
     "무제/Pasted image 20260309112812.png",
-    "라우팅.md",
-    "CISCO.md",
     "명령어.md",
     "무제/Pasted image 20260309105518.png",
     "무제/Pasted image 20260306091925.png",
     "무제/Pasted image 20260306091644.png",
     "팁.md",
     "무제.base",
-    "무제/Pasted image 20260306130934.png",
     "무제",
     "강의 자료/CH03_Device configuration v1.3.pdf",
     "강의 자료/CH02_TCP-IP v1.2.pdf",
@@ -246,7 +249,6 @@
     "Excalidraw/Drawing 2026-03-06 10.26.31.excalidraw.md",
     "Excalidraw",
     "그그 뭐더라.md",
-    "네트워크.md",
     "test.md",
     "환영합니다!.md"
   ]

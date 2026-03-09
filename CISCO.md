@@ -160,4 +160,5 @@ sh ip route #경로 보여주는 명령어
 ```bash
 인터페이스 까지만 입력해도 잘 됨
 Admin Distance: 우선순위.
+
 ```
