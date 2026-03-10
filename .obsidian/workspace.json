@@ -25,13 +25,16 @@
             "id": "dc93a722ef839f92",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "그래프 뷰"
+              "type": "pdf",
+              "state": {
+                "file": "강의 자료/CH03_Device configuration v1.3.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "CH03_Device configuration v1.3"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -206,8 +209,9 @@
       "bases:새 베이스 생성하기": false
     }
   },
-  "active": "c766fba43e656360",
+  "active": "dc93a722ef839f92",
   "lastOpenFiles": [
+    "CISCO.md",
     "무제/Pasted image 20260309114728.png",
     "무제/Pasted image 20260309114401.png",
     "무제/Pasted image 20260309114050.png",
@@ -221,7 +225,6 @@
     "팁.md",
     "무제/Pasted image 20260306152834.png",
     "무제/Pasted image 20260306130934.png",
-    "무제/Pasted image 20260306104451.png",
     "무제",
     "강의 자료/CH03_Device configuration v1.3.pdf",
     "강의 자료/CH02_TCP-IP v1.2.pdf",
@@ -230,7 +233,6 @@
     "Excalidraw/Drawing 2026-03-06 10.26.31.excalidraw.md",
     "Excalidraw",
     "그그 뭐더라.md",
-    "CISCO.md",
     "네트워크.md",
     "test.md",
     "환영합니다!.md"
